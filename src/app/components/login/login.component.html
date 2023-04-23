@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="container">
+  <div class="form-body">
+    
+    <form class="login" (ngSubmit)="onSubmit(user.username ,user.password)" #myForm="ngForm">
+      <!-- <div class="form-group">
+        <label for="user-name">Username</label>
+        <input id="login-username" type="text" class="form-input" placeholder="Username" required [(ngModel)]="user.username"  name="username">
+      </div>
+      <div class="form-group">
+        <label for="password" >Password</label>
+        <input id="login-password" type="password" class="form-input " placeholder="Password" required [(ngModel)]="user.password" name="password">
+      </div> -->
+<div class="logoo">
+  <span class="navbar-brand">
+    <img src="/src/assets/logo/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span style="font-weight: 900;">Welcome</span>
+  </span>
+</div>&nbsp;
+      <div class="row g-3 align-items-center form-group">
+        <div class="col-auto">
+          <label for="login-username" class="col-form-label">Username</label>
+        </div>
+        <div class="col-auto">
+          <input type="text" id="login-username" class="form-control"placeholder="Enter Your Username."required [(ngModel)]="user.username"  name="username" aria-describedby="passwordHelpInline">
+        </div>
+      </div>
+      <div class="row g-3 align-items-center form-group">
+        <div class="col-auto">
+          <label for="login-password" class="col-form-label">Password</label>
+        </div>
+        <div class="col-auto">
+          <input type="password" id="login-password" class="form-control" placeholder="Enter Your Password..." required [(ngModel)]="user.password" name="password" aria-describedby="passwordHelpInline">
+        </div>
+      </div>
+    
+      <button type="submit" class="btn btn-primary btn-block confirm-button">Submit</button>
+    </form>
+  </div>
+</div>
+
+    
